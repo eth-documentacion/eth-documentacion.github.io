@@ -58,4 +58,106 @@ var store = [{
         "tags": [],
         "url": "https://ethminer.tech/ru/articles/prognoz-12-03/",
         "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 08",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-08/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 09",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-09/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 10",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-10/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 11",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-11/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 12",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-12/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 13",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-13/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 14",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-14/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 15",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-15/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 16",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-16/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 17",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-17/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 18",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-18/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 19",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-19/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 20",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-20/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 21",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-21/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 22",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-22/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 23",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-23/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Clear 12 24",
+        "excerpt":"   ","categories": ["articles"],
+        "tags": [],
+        "url": "https://ethminer.tech/ru/articles/clear-12-24/",
+        "teaser": "https://ethminer.tech/assets/images/thumbs/500x300.png"
       },]
