@@ -2,6 +2,15 @@
 <urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ethminer.tech/documentation/linux/</loc>
+    
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
     <loc>https://ethminer.tech/download/0.19.0/</loc>
     
     <lastmod>2021-11-05T00:00:00+00:00</lastmod>
@@ -71,7 +80,7 @@
   <url>
     <loc>https://ethminer.tech/about/</loc>
       
-        <lastmod>2021-12-28T17:21:43+00:00</lastmod>
+        <lastmod>2021-12-29T15:15:54+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -83,7 +92,7 @@
   <url>
     <loc>https://ethminer.tech/cookie/</loc>
       
-        <lastmod>2021-12-28T17:21:43+00:00</lastmod>
+        <lastmod>2021-12-29T15:15:54+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -95,7 +104,7 @@
   <url>
     <loc>https://ethminer.tech/</loc>
       
-        <lastmod>2021-12-28T17:21:43+00:00</lastmod>
+        <lastmod>2021-12-29T15:15:54+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -119,7 +128,7 @@
   <url>
     <loc>https://ethminer.tech/privacy/</loc>
       
-        <lastmod>2021-12-28T17:21:43+00:00</lastmod>
+        <lastmod>2021-12-29T15:15:54+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -133,7 +142,7 @@
   <url>
     <loc>https://ethminer.tech/articles/</loc>
       
-        <lastmod>2021-12-28T17:21:43+00:00</lastmod>
+        <lastmod>2021-12-29T15:15:54+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -145,7 +154,7 @@
   <url>
     <loc>https://ethminer.tech/blog/</loc>
       
-        <lastmod>2021-12-28T17:21:43+00:00</lastmod>
+        <lastmod>2021-12-29T15:15:54+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -157,7 +166,7 @@
   <url>
     <loc>https://ethminer.tech/documentation/</loc>
       
-        <lastmod>2021-12-28T17:21:43+00:00</lastmod>
+        <lastmod>2021-12-29T15:15:54+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -169,7 +178,7 @@
   <url>
     <loc>https://ethminer.tech/download/</loc>
       
-        <lastmod>2021-12-28T17:21:43+00:00</lastmod>
+        <lastmod>2021-12-29T15:15:54+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -181,7 +190,7 @@
   <url>
     <loc>https://ethminer.tech/video/</loc>
       
-        <lastmod>2021-12-28T17:21:43+00:00</lastmod>
+        <lastmod>2021-12-29T15:15:54+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

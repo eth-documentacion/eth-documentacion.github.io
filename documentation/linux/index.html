@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru" class="no-js">
+<html lang="en" class="no-js">
    <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <!-- begin _includes/seo.html -->
-<title>Clear 12 22</title>
-<meta name="description" content="">
+<title>ETHMiner - Настройка для Linux на примере Ubuntu</title>
+<meta name="description" content="В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).">
  <meta name="author" content="ETHMiner">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="ETHMiner">
-<meta property="og:title" content="Clear 12 22">
-<meta property="og:url" content="https://ethminer.tech/ru/articles/clear-12-22/">
- <meta property="og:description" content="">
+<meta property="og:title" content="ETHMiner - Настройка для Linux на примере Ubuntu">
+<meta property="og:url" content="https://ethminer.tech/documentation/linux/">
+ <meta property="og:description" content="В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).">
  <meta property="og:image" content="https://ethminer.tech/assets/images/site-logo.png">
  <meta name="twitter:site" content="@ETHMiner">
- <meta name="twitter:title" content="Clear 12 22">
- <meta name="twitter:description" content="">
- <meta name="twitter:url" content="https://ethminer.tech/ru/articles/clear-12-22/">
+ <meta name="twitter:title" content="ETHMiner - Настройка для Linux на примере Ubuntu">
+ <meta name="twitter:description" content="В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).">
+ <meta name="twitter:url" content="https://ethminer.tech/documentation/linux/">
    <meta name="twitter:card" content="summary">
      <meta name="twitter:image" content="https://ethminer.tech/assets/images/site-logo.png">
- <meta property="article:published_time" content="2021-12-22T00:00:00+00:00">
- <meta property="article:modified_time" content="2021-12-20T00:00:00+00:00">
-<link rel="canonical" href="https://ethminer.tech/ru/articles/clear-12-22/">
+ <meta property="article:published_time" content="2021-12-29T00:00:00+00:00">
+ <meta property="article:modified_time" content="2021-12-29T00:00:00+00:00">
+<link rel="canonical" href="https://ethminer.tech/documentation/linux/">
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,7 +35,7 @@
  <meta name="google-site-verification" content="9_ctVU7HO3k1LsHpsirBgY_fjGiUFRDpJoahce3O7y8">
  <meta name="yandex-verification" content="cf68ffe195af2491">
 <!-- end _includes/seo.html -->
-<meta name="description" content="">
+<meta name="description" content="В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).">
  <meta name="author" content="ETHMiner">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="ETHMiner Feed">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,12 +74,12 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 <!-- end custom head snippets -->
 <meta name="coinzilla" content="c46d50ae4820613cd6296fdb4870bbfc">
 	<!-- link alternate -->
-		<link rel="alternate" hreflang="en" href="https://ethminer.tech/articles/clear-12-22/">
-		<link rel="alternate" hreflang="ru" href="https://ethminer.tech/ru/articles/clear-12-22/">
-		<link rel="alternate" hreflang="es" href="https://ethminer.tech/es/articles/clear-12-22/">
-		<link rel="alternate" hreflang="zh" href="https://ethminer.tech/zh/articles/clear-12-22/">
+		<link rel="alternate" hreflang="en" href="https://ethminer.tech/documentation/linux/">
+		<link rel="alternate" hreflang="ru" href="https://ethminer.tech/ru/documentation/linux/">
+		<link rel="alternate" hreflang="es" href="https://ethminer.tech/es/documentation/linux/">
+		<link rel="alternate" hreflang="zh" href="https://ethminer.tech/zh/documentation/linux/">
  </head>
-<body class="layout--single onlyru">
+<body class="layout--single">
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
@@ -87,17 +87,17 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
  <div class="masthead__inner-wrap">
    <div class="masthead__menu">
      <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/ru">
+        <a class="site-title" href="/">
           ETHMiner
         </a>
 		<ul class="visible-links">
            <li class="masthead__menu-item">
  </li>
 <li>
-    <a href="/ru/documentation/setup/">Быстрый Старт</a>
+    <a href="/documentation/setup/">Quick Start</a>
  </li>
 <li>
-    <a href="/ru/download/">Скачать</a>
+    <a href="/download/">Download</a>
        </li>
 </ul>
         <button class="search__toggle" type="button">
@@ -107,7 +107,7 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
           </svg>
         </button>
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Выпадающее меню</span>
+          <span class="visually-hidden">Toggle menu</span>
          <div class="navicon"></div>
         </button>
        <ul class="hidden-links hidden"></ul>
@@ -117,17 +117,17 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 </div>
 <div class="lang-nav">	
 	<nav id="lang-sel">
-		<a href="/articles/clear-12-22/" class="footer__link">en</a>
-		<a href="/ru/articles/clear-12-22/" class="footer__link">ru</a>
-		<a href="/es/articles/clear-12-22/" class="footer__link">es</a>
-		<a href="/zh/articles/clear-12-22/" class="footer__link">zh</a>
+		<a href="/documentation/linux/" class="footer__link">en</a>
+		<a href="/ru/documentation/linux/" class="footer__link">ru</a>
+		<a href="/es/documentation/linux/" class="footer__link">es</a>
+		<a href="/zh/documentation/linux/" class="footer__link">zh</a>
 	</nav>	
 </div>
    <div class="initial-content">
      <div id="main" role="main">
  <div class="sidebar nosticky">
 <nav class="nav__list">
- <h3 class="nav__title" style="padding-left: 0;">Содержание</h3>
+ <h3 class="nav__title" style="padding-left: 0;">Contents</h3>
   <input id="ac-toc" name="accordion-toc" type="checkbox">
   <label for="ac-toc">Toggle menu</label>
  <ul class="nav__items">
@@ -138,30 +138,518 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
           <a href="/documentation/arguments/"><span class="nav__sub-title">Command Line Arguments</span></a>
      </li>
 <li>
+          <a href="/documentation/linux/"><span class="nav__sub-title">Linux/Ubuntu</span></a>
+     </li>
+<li>
           <a href="/documentation/changelog/"><span class="nav__sub-title">Changelog</span></a>
  </li>
 </ul>
 </nav>
  </div>
  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-   <meta itemprop="headline" content="Clear 12 22">
-   <meta itemprop="description" content="">
-   <meta itemprop="datePublished" content="December 22, 2021">
-   <meta itemprop="dateModified" content="December 20, 2021"> 
+   <meta itemprop="headline" content="ETHMiner - Настройка для Linux на примере Ubuntu">
+   <meta itemprop="description" content="В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).">
+   <meta itemprop="datePublished" content="December 29, 2021">
+   <meta itemprop="dateModified" content="December 29, 2021"> 
    <div class="page__inner-wrap">
       <header>
+		 <h1 id="page-title" class="page__title" itemprop="headline">ETHMiner - Настройка для Linux на примере Ubuntu
+</h1>
            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-  менее 1 мин на чтение
+  8 minute read
 </p>
        </header>
      <section class="page__content" itemprop="text">
          <aside class="sidebar__right sticky">
            <nav class="toc">
             <header><h4 class="nav__title">
-<i class="fas fa-file-alt"></i> Содержание</h4></header>
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+             <ul class="toc__menu">
+ <li>
+<a href="#%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C">Скачать</a>
+ </li>
+<li>
+<a href="#%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-%D0%B8-%D1%81%D1%83%D1%82%D1%8C-%D1%8D%D1%82%D0%BE%D0%B3%D0%BE-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0">Команды и суть этого руководства</a>
+   <ul>
+     <li>
+<a href="#amd">AMD</a>
+     </li>
+<li>
+<a href="#nvidia">Nvidia</a>
+   </li>
+</ul>
+ </li>
+<li>
+<a href="#%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Требования</a>
+ </li>
+<li>
+<a href="#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%B0-amdgpu-pro-%D1%81-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%BE%D0%B9-opencl">Установка драйвера AMDGPU pro с поддержкой OpenCL</a>
+ </li>
+<li>
+<a href="#%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-ethminer-%D0%B4%D0%BB%D1%8F-ubuntu">Сборка Ethminer для ubuntu</a>
+ </li>
+<li>
+<a href="#%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-ethmienr">Первый запуск Ethmienr</a>
+ </li>
+<li>
+<a href="#%D0%B1%D0%B5%D0%BD%D1%87%D0%BC%D0%B0%D1%80%D0%BA%D0%B8%D0%BD%D0%B3-ethminer">Бенчмаркинг Ethminer</a>
+ </li>
+<li>
+<a href="#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D1%83%D0%BB%D1%83">Подключение к пулу</a>
+ </li>
+<li>
+<a href="#%D0%BC%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D0%B3-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D0%BF%D1%83%D0%BB%D1%8B">Майнинг через другие пулы</a>
+   <ul>
+     <li>
+<a href="#2minerscom">2miners.com</a>
+     </li>
+<li>
+<a href="#ethermineorg">ethermine.org</a>
+     </li>
+<li>
+<a href="#ethpoolorg">ethpool.org</a>
+     </li>
+<li>
+<a href="#f2poolcom">f2pool.com</a>
+     </li>
+<li>
+<a href="#flexpoolio">flexpool.io</a>
+     </li>
+<li>
+<a href="#miningpoolhubcom">miningpoolhub.com</a>
+     </li>
+<li>
+<a href="#nanopoolorg">nanopool.org</a>
+     </li>
+<li>
+<a href="#nicehashcom">nicehash.com</a>
+     </li>
+<li>
+<a href="#whalesburgcom">whalesburg.com</a>
+   </li>
+</ul>
+ </li>
+<li>
+<a href="#%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC">Исправление проблем</a>
+   <ul>
+     <li>
+<a href="#%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8">Получение системной информации</a>
+   </li>
+</ul>
+ </li>
+<li>
+<a href="#%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4">Вывод</a>
+ </li>
+<li>
+<a href="#%D1%83%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">Уведомление</a>
+ </li>
+<li>
+<a href="#%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9">Журнал изменений</a>
+</li>
+</ul>
            </nav>
          </aside>
-       <p><img src="/assets/images/articles/grayscale.jpg" alt="grayscale" loading="lazy" decoding="async"></p>
+       <p><em>В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).</em>
+<img srcset="/assets/images/documentation/mobile/ethminer.webp 323w,              /assets/images/documentation/webp/ethminer.webp 517w,              /assets/images/documentation/large/ethminer.webp 1920w" sizes="(max-width: 720px) 50px, 			(max-width: 721px) 1920px, 			(max-width: 1920px) 400px,             517px" src="/assets/images/documentation/jpeg/ethminer.png" alt="ethminer" loading="lazy" decoding="async"></p>
+<h2 id="скачать">Скачать</h2>
+<p><a href="https://github.com/ethereum-mining/ethminer/releases/download/v0.19.0-alpha.0/ethminer-0.19.0-alpha.0-cuda-9-darwin-x86_64.tar.gz" class="btn btn--success btn--x-large" rel="nofollow noopener" target="_blank">Скачать сейчас</a></p>
+<p><a href="https://github.com/ethereum-mining/ethminer/releases" class="btn btn--danger btn--x-large" rel="nofollow noopener" target="_blank">Скачать (зеркало)</a></p>
+<p>Хотя <a href="https://bytwork.com/articles/kak-maynit-ethereum" target="_blank">майнинг Ethereum в Windows</a> намного проще, вероятно, есть улучшение хешрейта, когда вы используете <a href="https://www.linux.org/" rel="nofollow noopener" target="_blank">Linux</a> в качестве драйвера.</p>
+<h2 id="команды-и-суть-этого-руководства">Команды и суть этого руководства</h2>
+<p>Сначала убедитесь, что вы установили последние версии драйверов AMDGPU-pro с поддержкой OpenCL.</p>
+<h3 id="amd">AMD</h3>
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">opencl</span><span class="o">-</span><span class="n">amdgpu</span><span class="o">-</span><span class="n">pro</span><span class="o">-</span><span class="n">icd</span> <span class="n">cmake</span> <span class="n">git</span> <span class="n">mesa</span><span class="o">-</span><span class="n">common</span><span class="o">-</span><span class="n">dev</span>
+</code></pre></div></div>
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="o">:</span><span class="c1">//github.com/ethereum-mining/ethminer.git
+</span><span class="n">cd</span> <span class="n">ethminer</span>
+<span class="n">git</span> <span class="n">submodule</span> <span class="n">update</span> <span class="o">--</span><span class="n">init</span> <span class="o">--</span><span class="n">recursive</span>
+<span class="n">mkdir</span> <span class="n">build</span><span class="p">;</span> <span class="n">cd</span> <span class="n">build</span>
+<span class="n">cmake</span> <span class="p">..</span> <span class="o">-</span><span class="n">DETHASHCUDA</span><span class="o">=</span><span class="n">OFF</span> <span class="o">-</span><span class="n">DETHASHCL</span><span class="o">=</span><span class="n">ON</span>
+<span class="n">cmake</span> <span class="o">--</span><span class="n">build</span> <span class="p">.</span> <span class="o">--</span> <span class="o">-</span><span class="n">j</span>
+<span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+<span class="n">ethminer</span> <span class="o">-</span><span class="n">G</span> <span class="o">-</span><span class="n">M</span> <span class="mi">0</span>
+<span class="n">ethminer</span> <span class="o">-</span><span class="n">G</span> <span class="o">--</span><span class="n">report</span><span class="o">-</span><span class="n">hr</span> <span class="o">-</span><span class="n">P</span> <span class="n">stratum1</span><span class="o">+</span><span class="n">tcp</span><span class="o">:</span><span class="c1">//0x47e83baffbc118393c082b7d4a62130b0480bb11.rigname@eth-eu1.nanopool.org:9999
+</span></code></pre></div></div>
+<h3 id="nvidia">Nvidia</h3>
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">nvidia</span><span class="o">-</span><span class="n">cuda</span><span class="o">-</span><span class="n">toolkit</span> <span class="n">cmake</span> <span class="n">mesa</span><span class="o">-</span><span class="n">common</span><span class="o">-</span><span class="n">dev</span>
+</code></pre></div></div>
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="o">:</span><span class="c1">//github.com/ethereum-mining/ethminer.git
+</span><span class="n">cd</span> <span class="n">ethminer</span>
+<span class="n">git</span> <span class="n">submodule</span> <span class="n">update</span> <span class="o">--</span><span class="n">init</span> <span class="o">--</span><span class="n">recursive</span>
+<span class="n">mkdir</span> <span class="n">build</span><span class="p">;</span> <span class="n">cd</span> <span class="n">build</span>
+<span class="n">cmake</span> <span class="p">..</span> <span class="o">-</span><span class="n">DETHASHCUDA</span><span class="o">=</span><span class="n">ON</span> <span class="o">-</span><span class="n">DETHASHCL</span><span class="o">=</span><span class="n">OFF</span>
+<span class="n">cmake</span> <span class="o">--</span><span class="n">build</span> <span class="p">.</span> <span class="o">--</span> <span class="o">-</span><span class="n">j</span>
+<span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+<span class="n">ethminer</span> <span class="o">-</span><span class="n">U</span> <span class="o">-</span><span class="n">M</span> <span class="mi">0</span>
+<span class="n">ethminer</span> <span class="o">-</span><span class="n">U</span> <span class="o">--</span><span class="n">report</span><span class="o">-</span><span class="n">hr</span> <span class="o">-</span><span class="n">P</span> <span class="n">stratum1</span><span class="o">+</span><span class="n">tcp</span><span class="o">:</span><span class="c1">//0x47e83baffbc118393c082b7d4a62130b0480bb11.rigname@eth-eu1.nanopool.org:9999
+</span></code></pre></div></div>
+<h2 id="требования">Требования</h2>
+<p>Поскольку Ethereum оптимизирован для майнинга на GPU, одна или несколько мощных видеокарт отлично подходят. Не имеет значения, NVidia это или AMD, хотя мы предпочитаем использовать AMD.</p>
+<p>Также убедитесь, что у вашей видеокарты достаточно памяти. Вы можете использовать <a href="https://minerstat.com/dag-size-calculator?lang=ru" rel="nofollow noopener" target="_blank">калькулятор размера DAG файла</a>, чтобы узнать, сколько памяти вам нужно. Видеокарт с памятью менее 5Гб уже не хватает.</p>
+<p>Также вам понадобится кошелек для предоставления вашего уникального Ethereum адреса.</p>
+<p class="notice--info">Лично мы рекомендуем использовать <a href="https://cutt.ly/nUWrYO8" rel="nofollow noopener" target="_blank">Ledger</a>, поскольку он прост в настройке, поддерживает множество валют и не потребляет все ресурсы вашей системы, как <a href="https://miningsoft.org/ru/wallets/trust/" target="_blank">Trust Wallet</a>.</p>
+<p>Нам не нравится идея, когда посредники хранят ваши <a href="https://bytwork.com/articles/privatnye-klyuchi" target="_blank">приватные ключи</a>, мы предлагаю вам держаться подальше от <a href="https://club.cnews.ru/blogs/entry/obzor_luchshih_apparatnyh_i_oblachnyh_bitkoin_koshelkov" rel="nofollow noopener" target="_blank">облачных кошельков</a>.</p>
+<p>Для карт AMD вам также необходимо установить драйвер AMDGPU-pro с поддержкой OpenCL перед компиляцией Ethminer.</p>
+<h2 id="установка-драйвера-amdgpu-pro-с-поддержкой-opencl">Установка драйвера AMDGPU pro с поддержкой OpenCL</h2>
+<p>Получите последние версии драйверов со страницы <a href="https://www.amd.com/ru/support" rel="nofollow noopener" target="_blank">поддержки AMD</a>, затем установите их с <a href="https://amdgpu-install.readthedocs.io/en/latest/" rel="nofollow noopener" target="_blank">поддержкой OpenCL</a> и перезагрузитесь:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># See: https://www.amd.com/en/support</span>
+<span class="nb">tar</span> <span class="nt">-xf</span> amdgpu-pro-<span class="k">*</span>.tar.xz
+<span class="nb">cd </span>amdgpu-pro-<span class="k">*</span>/
+./amdgpu-pro-install <span class="nt">--opencl</span><span class="o">=</span>legacy,pal
+reboot
+</code></pre></div></div>
+<p>Для карт Vega10 (или новее) требуется изменение, замените <code class="language-plaintext highlighter-rouge">legacy,pal</code> на <code class="language-plaintext highlighter-rouge">rocm</code>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./amdgpu-pro-install <span class="nt">--opencl</span><span class="o">=</span>rocm
+</code></pre></div></div>
+<p>При желании, можно добавить -<code class="language-plaintext highlighter-rouge">-headless</code> и / или <code class="language-plaintext highlighter-rouge">--no-dkms</code> опцию к <code class="language-plaintext highlighter-rouge">./amdgpu-pro-install</code> команде, если не хотите, чтобы в окружении рабочего стола загружались драйверы AMD:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./amdgpu-pro-install <span class="nt">--opencl</span><span class="o">=</span>legacy,pal <span class="nt">--no-dkms</span> <span class="nt">--headless</span>
+</code></pre></div></div>
+<h2 id="сборка-ethminer-для-ubuntu">Сборка Ethminer для ubuntu</h2>
+<p>Собирать Ethminer вручную не требуется. <a href="/download/latest/">Последнюю версию можно загрузить со страницы релизов</a>. Однако, если вы профессионал и хотите получить дополнительные хэши от вашей видеокарты, скомпилируйте майнер самостоятельно, выполнив следующие шаги.</p>
+<ol>
+ <li>Сначала установите необходимые драйверы для вашей видеокарты:
+   <ul>
+     <li>Для NVidia используйте:
+       <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>nvidia-cuda-toolkit
+</code></pre></div>      </div>
+     </li>
+<li>Для AMD сначала установите драйвер с поддержкой OpenCL, а затем используйте:
+       <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>opencl-amdgpu-pro-icd
+</code></pre></div>      </div>
+   </li>
+</ul>
+ </li>
+<li>Также убедитесь, что в вашей системе существуют все необходимые пакеты:
+   <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>cmake mesa-common-dev git
+</code></pre></div>  </div>
+ </li>
+<li>Теперь загрузите последнюю версию с GitHub в новую папку:
+   <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>git clone https://github.com/ethereum-mining/ethminer.git
+<span class="nb">cd </span>ethminer
+git submodule update <span class="nt">--init</span> <span class="nt">--recursive</span>
+</code></pre></div>  </div>
+ </li>
+<li>Наконец, скомпилируйте его (команда займет некоторое время, так что наберитесь терпения):
+   <ul>
+     <li>Для AMD используйте:
+       <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>build<span class="p">;</span> <span class="nb">cd </span>build
+cmake .. <span class="nt">-DETHASHCUDA</span><span class="o">=</span>OFF <span class="nt">-DETHASHCL</span><span class="o">=</span>ON
+cmake <span class="nt">--build</span> <span class="nb">.</span> <span class="nt">--</span> <span class="nt">-j</span>
+</code></pre></div>      </div>
+     </li>
+<li>Для использования NVidia:
+       <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>build<span class="p">;</span> <span class="nb">cd </span>build
+cmake .. <span class="nt">-DETHASHCUDA</span><span class="o">=</span>ON <span class="nt">-DETHASHCL</span><span class="o">=</span>OFF
+cmake <span class="nt">--build</span> <span class="nb">.</span> <span class="nt">--</span> <span class="nt">-j</span>
+</code></pre></div>      </div>
+   </li>
+</ul>
+ </li>
+<li>При желании вы можете установить его как исполняемый файл:
+   <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div>  </div>
+</li>
+</ol>
+<h2 id="первый-запуск-ethmienr">Первый запуск Ethmienr</h2>
+<p>Если вы пропустили шаг 5 выше, вы можете запустить Ethminer из каталога ethminer внутри каталога сборки, в котором вы, вероятно, все еще находитесь:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ethminer/ethminer <span class="nt">--help</span>
+</code></pre></div></div>
+<p>В противном случае вы можете запустить его напрямую:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ethminer <span class="nt">--help</span>
+</code></pre></div></div>
+<p>Команды выше показывают краткую документацию Ethminer. Для длинной документации используйте <code class="language-plaintext highlighter-rouge">--help-ext</code> опцию с одним из допустимых расширений:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ethminer <span class="nt">--help-ext</span>
+</code></pre></div></div>
+<p>При желании вы можете просмотреть все параметры в файле <a href="https://github.com/ethereum/aleth#usage-1" rel="nofollow noopener" target="_blank">readme cpp-ethereum</a> (который является источником ethminer с поддержкой GPU).</p>
+<h2 id="бенчмаркинг-ethminer">Бенчмаркинг Ethminer</h2>
+<p>Чтобы получить представление о Mh/s, достигаемых вашей фермой, вы можете сначала запустить тест.
+Для ATI / OpenCL используйте:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ethminer/ethminer <span class="nt">-G</span> <span class="nt">-M</span> 0
+</code></pre></div></div>
+<p>Для NVidia / CUDA используйте:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ethminer/ethminer <span class="nt">-U</span> <span class="nt">-M</span> 0
+</code></pre></div></div>
+<p>Если тест возвращает пустой результат (что, вероятно, будет в первые несколько раз), подождите, пока не будет сгенерирован DAG файл.</p>
+<p><a href="/assets/images/documentation/webp/ethminer-benchmark.webp" class="image-popup"> <img src="/assets/images/documentation/webp/ethminer-benchmark.webp" alt="benchmark" loading="lazy" decoding="async"> </a></p>
+<p>Разделите “MAX hashrate” на 1000000, чтобы получить скорость в мегахэшах. Это ваш реальный хешрейт в MH/s.</p>
+<h2 id="подключение-к-пулу">Подключение к пулу</h2>
+<p>Наконец, мы готовы начать майнинг! Последний шаг на самом деле очень прост, просто выполните следующую команду:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ethminer/ethminer <span class="nt">-G</span> <span class="nt">--report-hr</span> <span class="nt">-P</span> stratum1+tcp://0x5576999cc34c1c0030f28939444d6ba9cd6919c2.rigname@eth-eu1.nanopool.org:9999
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">0x5576999cc34c1c0030f28939444d6ba9cd6919c2</code> - замените адрес вашего Eth-кошелька.</p>
+<p><code class="language-plaintext highlighter-rouge">rigname</code> - название вашей фермы (или просто удалите его, так как это необязательная опция).</p>
+<p>Теперь майнинг должен начать работать. При желании вы можете отслеживать свой прогресс, просмотрев адрес своего кошелька на странице статистики майнера.</p>
+<h2 id="майнинг-через-другие-пулы">Майнинг через другие пулы</h2>
+<p>Ethminer поддерживает все новейшие протоколы, что позволяет вам подключаться к любому пулу, который вы хотите. См. примеры того, как подключиться к разным пулам, чтобы начать работу.</p>
+<p>Название пула	Домашняя страница пула	Подробности о подключении</p>
+<table>
+<thead>
+   <tr>
+     <th>Pool Name
+     </th>
+<th>Pool Homepage
+     </th>
+<th>Details about connection
+ </th>
+</tr>
+</thead>
+<tbody>
+   <tr>
+     <td>
+<a href="#2minerscom">2miners.com</a>
+     </td>
+<td>
+<a href="https://2miners.com/" rel="nofollow noopener" target="_blank">https://2miners.com/</a>
+     </td>
+<td>
+<a href="https://eth.2miners.com/en/help" rel="nofollow noopener" target="_blank">https://eth.2miners.com/en/help</a>
+   </td>
+</tr>
+<tr>
+     <td>
+<a href="#ethermineorg">ethermine.org</a>
+     </td>
+<td>
+<a href="https://ethermine.org/" rel="nofollow noopener" target="_blank">https://ethermine.org/</a>
+     </td>
+<td>
+<a href="https://ethermine.org/" rel="nofollow noopener" target="_blank">https://ethermine.org/</a>
+   </td>
+</tr>
+<tr>
+     <td>
+<a href="#ethpoolorg">ethpool.org</a>
+     </td>
+<td>
+<a href="https://www.ethpool.org/" rel="nofollow noopener" target="_blank">https://www.ethpool.org/</a>
+     </td>
+<td>
+<a href="https://www.ethpool.org/" rel="nofollow noopener" target="_blank">https://www.ethpool.org/</a>
+   </td>
+</tr>
+<tr>
+     <td>
+<a href="#f2poolcom">f2pool.com</a>
+     </td>
+<td>
+<a href="https://www.f2pool.com/" rel="nofollow noopener" target="_blank">https://www.f2pool.com/</a>
+     </td>
+<td>
+<a href="https://www.f2pool.com/help/?#tab-content-eth" rel="nofollow noopener" target="_blank">https://www.f2pool.com/help/?#tab-content-eth</a>
+   </td>
+</tr>
+<tr>
+     <td>
+<a href="#flexpoolio">flexpool.io</a>
+     </td>
+<td>
+<a href="https://flexpool.io/" rel="nofollow noopener" target="_blank">https://flexpool.io/</a>
+     </td>
+<td>
+<a href="https://flexpool.io/docs/getting-started/" rel="nofollow noopener" target="_blank">https://flexpool.io/docs/getting-started/</a>
+   </td>
+</tr>
+<tr>
+     <td>
+<a href="#miningpoolhubcom">miningpoolhub.com</a>
+     </td>
+<td>
+<a href="https://miningpoolhub.com/" rel="nofollow noopener" target="_blank">https://miningpoolhub.com/</a>
+     </td>
+<td>
+<a href="https://ethereum.miningpoolhub.com/" rel="nofollow noopener" target="_blank">https://ethereum.miningpoolhub.com/</a>
+   </td>
+</tr>
+<tr>
+     <td>
+<a href="#nanopoolorg">nanopool.org</a>
+     </td>
+<td>
+<a href="https://nanopool.org/" rel="nofollow noopener" target="_blank">https://nanopool.org/</a>
+     </td>
+<td>
+<a href="https://eth.nanopool.org/help" rel="nofollow noopener" target="_blank">https://eth.nanopool.org/help</a>
+   </td>
+</tr>
+<tr>
+     <td>
+<a href="#nicehashcom">nicehash.com</a>
+     </td>
+<td>
+<a href="https://www.nicehash.com/" rel="nofollow noopener" target="_blank">https://www.nicehash.com/</a>
+     </td>
+<td>
+<a href="https://www.nicehash.com/help/which-stratum-servers-are-available" rel="nofollow noopener" target="_blank">https://www.nicehash.com/help/which-stratum-servers-are-available</a>
+   </td>
+</tr>
+<tr>
+     <td>
+<a href="#whalesburgcom">whalesburg.com</a>
+     </td>
+<td>
+<a href="https://whalesburg.com/" rel="nofollow noopener" target="_blank">https://whalesburg.com/</a>
+     </td>
+<td>
+<a href="https://whalesburg.com/start_mining/" rel="nofollow noopener" target="_blank">https://whalesburg.com/start_mining/</a>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2minerscom">2miners.com</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum1+tcp://ETH_WALLET.WORKERNAME@eth.2miners.com:2020
+</code></pre></div></div>
+<h3 id="ethermineorg">ethermine.org</h3>
+<p>Non-SSL connection:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum1+tcp://ETH_WALLET.WORKERNAME@asia1.ethermine.org:4444
+-P stratum1+tcp://ETH_WALLET.WORKERNAME@eu1.ethermine.org:4444
+-P stratum1+tcp://ETH_WALLET.WORKERNAME@us1.ethermine.org:4444
+-P stratum1+tcp://ETH_WALLET.WORKERNAME@us2.ethermine.org:4444
+</code></pre></div></div>
+<p>SSL connection:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum1+ssl://ETH_WALLET.WORKERNAME@asia1.ethermine.org:5555
+-P stratum1+ssl://ETH_WALLET.WORKERNAME@eu1.ethermine.org:5555
+-P stratum1+ssl://ETH_WALLET.WORKERNAME@us1.ethermine.org:5555
+-P stratum1+ssl://ETH_WALLET.WORKERNAME@us2.ethermine.org:5555
+</code></pre></div></div>
+<h3 id="ethpoolorg">ethpool.org</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> -P stratum1+tcp://ETH_WALLET.WORKERNAME@asia1.ethpool.org:3333
+ -P stratum1+tcp://ETH_WALLET.WORKERNAME@eu1.ethpool.org:3333
+ -P stratum1+tcp://ETH_WALLET.WORKERNAME@us1.ethpool.org:3333
+</code></pre></div></div>
+<h3 id="f2poolcom">f2pool.com</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum1+tcp://ETH_WALLET.WORKERNAME@eth.f2pool.com:8008
+</code></pre></div></div>
+<h3 id="flexpoolio">flexpool.io</h3>
+<p>Non-SSL connection:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum1+tcp://ETH_WALLET.WORKERNAME@eu.flexpool.io:4444
+-P stratum1+tcp://ETH_WALLET.WORKERNAME@us.flexpool.io:4444
+</code></pre></div></div>
+<p>SSL connection:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum1+ssl://ETH_WALLET.WORKERNAME@eu.flexpool.io:5555
+-P stratum1+ssl://ETH_WALLET.WORKERNAME@us.flexpool.io:5555
+</code></pre></div></div>
+<h3 id="miningpoolhubcom">miningpoolhub.com</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum2+tcp://USERNAME%2eWORKERNAME:WORKERPWD@asia.ethash-hub.miningpoolhub.com:20535
+-P stratum2+tcp://USERNAME%2eWORKERNAME:WORKERPWD@europe.ethash-hub.miningpoolhub.com:20535
+-P stratum2+tcp://USERNAME%2eWORKERNAME:WORKERPWD@us-east.ethash-hub.miningpoolhub.com:20535
+</code></pre></div></div>
+<p>HINTS:</p>
+<ul>
+ <li>miningpoolhub.com needs username.workername in the internal login process. Use “%2e” to join them into one parameter.
+ </li>
+<li>It seems the password is not being verified by the pool so you can use a plain <code class="language-plaintext highlighter-rouge">x</code> as <code class="language-plaintext highlighter-rouge">WORKERPWD</code>.
+</li>
+</ul>
+<h3 id="nanopoolorg">nanopool.org</h3>
+<p>Notice ⚠</p>
+<ul>
+ <li>Use “%40” for the @-sign in your email address
+ </li>
+<li>Use “\%2e” for the .-sign on Linux in ETH_WALLET.WORKERNAME
+</li>
+</ul>
+<p>With email:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum1+tcp://ETH_WALLET@eth-asia1.nanopool.org:9999/WORKERNAME/EMAIL
+-P stratum1+tcp://ETH_WALLET@eth-eu1.nanopool.org:9999/WORKERNAME/EMAIL
+-P stratum1+tcp://ETH_WALLET@eth-eu2.nanopool.org:9999/WORKERNAME/EMAIL
+-P stratum1+tcp://ETH_WALLET@eth-us-east1.nanopool.org:9999/WORKERNAME/EMAIL
+-P stratum1+tcp://ETH_WALLET@eth-us-west1.nanopool.org:9999/WORKERNAME/EMAIL
+</code></pre></div></div>
+<p>Without email:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum1+tcp://ETH_WALLET.WORKERNAME@eth-asia1.nanopool.org:9999
+-P stratum1+tcp://ETH_WALLET.WORKERNAME@eth-eu1.nanopool.org:9999
+-P stratum1+tcp://ETH_WALLET.WORKERNAME@eth-eu2.nanopool.org:9999
+-P stratum1+tcp://ETH_WALLET.WORKERNAME@eth-us-east1.nanopool.org:9999
+-P stratum1+tcp://ETH_WALLET.WORKERNAME@eth-us-west1.nanopool.org:9999
+</code></pre></div></div>
+<h3 id="nicehashcom">nicehash.com</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum2+tcp://BTC_WALLET.WORKERNAME@daggerhashimoto.br.nicehash.com:3353
+-P stratum2+tcp://BTC_WALLET.WORKERNAME@daggerhashimoto.eu.nicehash.com:3353
+-P stratum2+tcp://BTC_WALLET.WORKERNAME@daggerhashimoto.hk.nicehash.com:3353
+-P stratum2+tcp://BTC_WALLET.WORKERNAME@daggerhashimoto.in.nicehash.com:3353
+-P stratum2+tcp://BTC_WALLET.WORKERNAME@daggerhashimoto.jp.nicehash.com:3353
+-P stratum2+tcp://BTC_WALLET.WORKERNAME@daggerhashimoto.usa.nicehash.com:3353
+</code></pre></div></div>
+<h3 id="whalesburgcom">whalesburg.com</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P stratum1+tcp://ETH_WALLET.WORKERNAME@proxy.pool.whalesburg.com:8082
+</code></pre></div></div>
+<h2 id="исправление-проблем">Исправление проблем</h2>
+<h3 id="получение-системной-информации">Получение системной информации</h3>
+<p>Некоторые команды, которые мы использовали, чтобы понять, какие драйверы или устройства распознаются или нет:</p>
+<p>List GPU’s with loaded drivers:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lspci <span class="nt">-k</span> | <span class="nb">grep</span> <span class="nt">-EA3</span> <span class="s1">'VGA|3D|Display'</span>
+</code></pre></div></div>
+<p>Show loaded kernel modules:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lsmod | <span class="nb">grep</span> <span class="s2">"kms</span><span class="se">\|</span><span class="s2">drm</span><span class="se">\|</span><span class="s2">amdgpu"</span>
+</code></pre></div></div>
+<p>List OpenCL platforms and devices:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clinfo
+</code></pre></div></div>
+<p>List devices Ethminer recognises:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ethminer <span class="nt">--list-devices</span>
+</code></pre></div></div>
+<p>Тест Ethminer продолжает давать 0H / s
+В основном это происходит на CUDA-картах и / или когда генерация DAG занимает больше времени, чем время прогрева. –benchmark-warmupОпция была удалена, так что будьте терпеливы и пусть файл DAG генерировать.
+Сборка Ethminer завершается с ошибкой #error – unsupported GNU version! gcc versions later than 8 are not supported!
+Эта ошибка на самом деле не требует пояснений, и ее можно решить, установив версию gcc вручную:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make clean
+</code></pre></div></div>
+<p>Now install required libs and restart building:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>gcc-8 g++-8
+</code></pre></div></div>
+<p>For ATI/OpenCL use:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake <span class="nt">-D</span> <span class="nv">CMAKE_C_COMPILER</span><span class="o">=</span>gcc-8 <span class="nt">-D</span> <span class="nv">CMAKE_CXX_COMPILER</span><span class="o">=</span>g++-8 <span class="nt">-DETHASHCUDA</span><span class="o">=</span>OFF <span class="nt">-DETHASHCL</span><span class="o">=</span>ON ..
+cmake <span class="nt">--build</span> <span class="nb">.</span> <span class="nt">--</span> <span class="nt">-j</span>
+</code></pre></div></div>
+<h1 id="for-nvidiacuda-use">For Nvidia/CUDA use:</h1>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake <span class="nt">-D</span> <span class="nv">CMAKE_C_COMPILER</span><span class="o">=</span>gcc-8 <span class="nt">-D</span> <span class="nv">CMAKE_CXX_COMPILER</span><span class="o">=</span>g++-8 <span class="nt">-DETHASHCUDA</span><span class="o">=</span>ON <span class="nt">-DETHASHCL</span><span class="o">=</span>OFF ..
+cmake <span class="nt">--build</span> <span class="nb">.</span> <span class="nt">--</span> <span class="nt">-j</span>
+</code></pre></div></div>
+<p>Ethminer не видит пригодных для использования устройств с картой AMD Error: No usable mining devices found
+Используя clinfo, проверьте, найдены ли какие-либо платформы с поддержкой OpenCL:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is wrong Number of platforms                0 # This is good Number of platforms                1  Platform Name                  AMD Accelerated Parallel Processing  Platform Vendor                 Advanced Micro Devices, Inc.  Platform Version                OpenCL 2.1 AMD-APP (3143.9)  Platform Profile                FULL_PROFILE [...]
+</code></pre></div></div>
+<p>Если и то, clinfoи другое ethminerне видит устройств, это означает, что используемый вами драйвер устройства либо не работает должным образом, либо не поддерживает OpenCL. См. Выше, как установить драйвер для вашего устройства. Заранее удалите все существующие драйверы. При желании вы можете проверить, загружен ли драйвер AMD в ядро, используя lsmod | grep amdgpu.
+SIGSEGV, на устройстве недостаточно памяти
+Посмотрите на строки над сообщением трассировки, чтобы выяснить, что именно пошло не так. Если на вашем устройстве недостаточно памяти, вы можете выжать дополнительную жизнь из своей карты, остановив все другие программы и / или остановив среду графического интерфейса пользователя / рабочего стола. Используйте калькулятор размера DAG, чтобы узнать, какой минимальный объем памяти GPU необходим для процесса майнинга. Использование ethminer –list-devicesпоказывает доступный объем памяти.
+Альтернативным решением может быть добыча других монет, которые полагаются на Ethash Proof of Work, например Expanse или Metaverse.
+Другие (совместимость) проблемы
+Иногда использование последней версии приводит к возникновению странных проблем или ошибок, которые еще не исправлены. Поэтому вы можете проверить более раннюю версию (например, v0.18.0) и попробовать, работает ли она:
+git clone –single-branch –branch v0.18.0 https://github.com/ethereum-mining/ethminer.git
+Затем выполните те же действия по сборке, которые указаны выше.
+Кроме того, важно проверить, нет ли конфликтующих драйверов или других проблем. Для AMD вы можете вручную удалить существующие драйверы:
+amdgpu-pro-uninstall rm -Rf /etc/vulkan /opt/amdgpu /opt/amdgpu-pro</p>
+<h2 id="вывод">Вывод</h2>
+<p>Когда я начинал работать с Windows 10, мой единственный R9 Nano достиг максимального хешрейта около 22 Mh/s. После установки Linux с предварительно созданной версией Ethminer хешрейт подскочил почти до 24 Mh/s. После ручного построения скорость в среднем составляет чуть более 25Mh/s, а если погода прохладная, то немного выше!
+Поэтому я должен заключить, что дополнительные усилия по запуску майнера и драйверов действительно того стоят.
+Считали этот пост полезным?
+Поддержите нас, отправив небольшую подсказку</p>
+<h2 id="уведомление">Уведомление</h2>
+<p>Майнинг сократит срок службы вашего оборудования и заставит ваш компьютер потреблять больше энергии, что приведет к увеличению счета за электроэнергию. Кроме того, вы можете потерять все вложенные деньги. Итак, используйте свой мозг!
+Вы и только вы несете ответственность за любой ущерб, нанесенный вам, вашему оборудованию или финансовый ущерб.</p>
+<h2 id="журнал-изменений">Журнал изменений</h2>
+<p>2019-01-10
+Удален eth.pp.ua, так как он давно умер, и используйте вместо него eth.nanopool.org. Добавлены команды для обеспечения актуальности подмодулей GIT и другие исправления в командах, чтобы гарантировать, что сборка снова будет работать.
+2019-01-11
+-t 1Флаг убран, так как он не нужен. Добавлен –report-hrфлаг, чтобы сообщать о хешрейте в пул. Изменена страница загрузки драйверов AMD, чтобы пользователи всегда получали последнюю версию драйвера.
+2020-09-23
+Добавлена -jвозможность использовать все ядра процессора при сборке, потому что это значительно ускоряет процесс.
+Добавлена документация по ферме драйверов AMDGPU-pro с поддержкой OpenCL.
+2020-09-24
+Добавлена дополнительная информация по устранению неполадок, решение проблемы нехватки памяти и другие мелкие исправления.
+Исправлено указание версии gcc и g ++ при сборке.
+2021-01-04
+Максимально поддерживаемая версия gcc / g ++ - 8, заменено 6 в исправлении ошибки.
+2021-01-07
+Добавлен sudoперед командами, требующими дополнительных привилегий.</p>
+<p><a href="/assets/images/mining/mining_rig_2097.png" class="image-popup"> <img src="/assets/images/mining/mining_rig_2097.png" alt="mining rig for ethminer" loading="lazy" decoding="async"> </a></p>
      </section>
 </div>
    </article>
@@ -205,7 +693,7 @@ File: *ETHMiner.exe, <br>
 <div class="tim-vi2">	
  <!-- related_posts -->
    <div class="page__related">
-     <h4 class="page__related-title">Вам также может понравиться</h4>
+     <h4 class="page__related-title">You may also enjoy</h4>
      <div class="grid__wrapper">
 <div class="grid__item">
  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
@@ -213,14 +701,18 @@ File: *ETHMiner.exe, <br>
         <img src="/assets/images/thumbs/500x300.png" alt="" loading="lazy" decoding="async">
      </div>
    <h2 class="archive__item-title" itemprop="headline">
-        <a href="/ru/articles/clear-12-24/" rel="permalink">Clear 12 24
+        <a href="/download/0.19.0/" rel="permalink">Download ETHMiner 0.19.0 - AMD+Nvidia GPU Miner [2021]
 </a>
    </h2>
      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-  менее 1 мин на чтение
+  1 minute read
 </p>
    <p class="archive__item-excerpt" itemprop="description">
-</p>
+Get started with ETHMiner
+		Version: 0.19.0
+		File: *ETHMiner.exe,  
+		SHA256: e6614c7572887b7426b7149bbd68765bbe3a08ae71ccfd46d13c9d652c14eb5c
+		(D...</p>
  </article>
 </div>
 <div class="grid__item">
@@ -229,14 +721,18 @@ File: *ETHMiner.exe, <br>
         <img src="/assets/images/thumbs/500x300.png" alt="" loading="lazy" decoding="async">
      </div>
    <h2 class="archive__item-title" itemprop="headline">
-        <a href="/ru/articles/clear-12-23/" rel="permalink">Clear 12 23
+        <a href="/download/0.18.0/" rel="permalink">Download ETHMiner 0.18.0 - AMD+Nvidia GPU Miner [2021]
 </a>
    </h2>
      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-  менее 1 мин на чтение
+  less than 1 minute read
 </p>
    <p class="archive__item-excerpt" itemprop="description">
-</p>
+Get started with ETHMiner
+		Version: 0.18.0
+		File: *ETHMiner.exe,  
+		SHA256: b783c74e53a5fcdf7d798d268e1abf6f30235b792e041c9972ab844e015b1984
+		(D...</p>
  </article>
 </div>
 <div class="grid__item">
@@ -245,14 +741,17 @@ File: *ETHMiner.exe, <br>
         <img src="/assets/images/thumbs/500x300.png" alt="" loading="lazy" decoding="async">
      </div>
    <h2 class="archive__item-title" itemprop="headline">
-        <a href="/ru/articles/clear-12-21/" rel="permalink">Clear 12 21
+        <a href="/download/latest/" rel="permalink">Download the latest version ETHMiner (0.19.0) - [2021]
 </a>
    </h2>
      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-  менее 1 мин на чтение
+  1 minute read
 </p>
    <p class="archive__item-excerpt" itemprop="description">
-</p>
+Get started with ETHMiner
+		Latest version is 0.19.0
+		SHA256: e6614c7572887b7426b7149bbd68765bbe3a08ae71ccfd46d13c9d652c14eb5c *ETHMiner0.19.0.exe
+...</p>
  </article>
 </div>
 <div class="grid__item">
@@ -261,14 +760,13 @@ File: *ETHMiner.exe, <br>
         <img src="/assets/images/thumbs/500x300.png" alt="" loading="lazy" decoding="async">
      </div>
    <h2 class="archive__item-title" itemprop="headline">
-        <a href="/ru/articles/clear-12-20/" rel="permalink">Clear 12 20
+        <a href="/blog/software/" rel="permalink">Top 5 BEST Ethereum Mining Software [2021]
 </a>
    </h2>
      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-  менее 1 мин на чтение
+  4 minute read
 </p>
-   <p class="archive__item-excerpt" itemprop="description">
-</p>
+   <p class="archive__item-excerpt" itemprop="description">There are many cryptocurrency mining software available for both Windows and Linux. However, some of them have better features, lower fees, or perform better...</p>
  </article>
 </div>
      </div>
@@ -276,24 +774,29 @@ File: *ETHMiner.exe, <br>
     <!-- post navigation footer -->
       <footer class="page__meta">
  <p class="page__taxonomy">
-    <i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Разделы:
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
     <span itemprop="keywords">
-      <a href="/ru/articles" class="page__taxonomy-item" rel="tag">articles</a>
+      <a href="/tags/ethminer" class="page__taxonomy-item" rel="tag">ETHMiner</a>
     </span>
  </p>
-		 <p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Дата изменения: <time datetime="2021-12-20T00:00:00+00:00">20.12.2021</time></p>
+ <p class="page__taxonomy">
+    <i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories:
+    <span itemprop="keywords">
+      <a href="/documentation" class="page__taxonomy-item" rel="tag">documentation</a>
+    </span>
+ </p>
+		 <p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated: <time datetime="2021-12-29T00:00:00+00:00">29.12.2021</time></p>
      </footer>
      <section class="page__share">
-   <h4 class="page__share-title">Поделиться</h4>
-  <a href="https://twitter.com/intent/tweet?via=ETHMiner&amp;text=Clear+12+22%20https%3A%2F%2Fethminer.tech%2Fru%2Farticles%2Fclear-12-22%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться Twitter" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fethminer.tech%2Fru%2Farticles%2Fclear-12-22%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться Facebook" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fethminer.tech%2Fru%2Farticles%2Fclear-12-22%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Поделиться LinkedIn" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+   <h4 class="page__share-title">Share on</h4>
+  <a href="https://twitter.com/intent/tweet?via=ETHMiner&amp;text=ETHMiner+-+%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+%D0%B4%D0%BB%D1%8F+Linux+%D0%BD%D0%B0+%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%B5+Ubuntu%20https%3A%2F%2Fethminer.tech%2Fdocumentation%2Flinux%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fethminer.tech%2Fdocumentation%2Flinux%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fethminer.tech%2Fdocumentation%2Flinux%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
  <nav class="pagination">
-      <a href="/ru/articles/clear-12-21/" class="pagination--pager" title="Clear 12 21
-">Предыдущая</a>
-      <a href="/ru/articles/clear-12-23/" class="pagination--pager" title="Clear 12 23
-">Следующая</a>
+      <a href="/download/0.19.0/" class="pagination--pager" title="Download ETHMiner 0.19.0 - AMD+Nvidia GPU Miner [2021]
+">Previous</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
  </nav>
   <!-- comments -->
       <!--      -->
