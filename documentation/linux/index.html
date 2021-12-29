@@ -4,19 +4,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <!-- begin _includes/seo.html -->
-<title>ETHMiner - Настройка для Linux на примере Ubuntu</title>
-<meta name="description" content="В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).">
+<title>How to Install Ethminer on linux (Ubuntu)</title>
+<meta name="description" content="Simple steps on how to get started with ETHMiner by manually compiling it and configuring it for mining with Nanopool (although it will work for other pools as well).">
  <meta name="author" content="ETHMiner">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="ETHMiner">
-<meta property="og:title" content="ETHMiner - Настройка для Linux на примере Ubuntu">
+<meta property="og:title" content="How to Install Ethminer on linux (Ubuntu)">
 <meta property="og:url" content="https://ethminer.tech/documentation/linux/">
- <meta property="og:description" content="В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).">
+ <meta property="og:description" content="Simple steps on how to get started with ETHMiner by manually compiling it and configuring it for mining with Nanopool (although it will work for other pools as well).">
  <meta property="og:image" content="https://ethminer.tech/assets/images/site-logo.png">
  <meta name="twitter:site" content="@ETHMiner">
- <meta name="twitter:title" content="ETHMiner - Настройка для Linux на примере Ubuntu">
- <meta name="twitter:description" content="В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).">
+ <meta name="twitter:title" content="How to Install Ethminer on linux (Ubuntu)">
+ <meta name="twitter:description" content="Simple steps on how to get started with ETHMiner by manually compiling it and configuring it for mining with Nanopool (although it will work for other pools as well).">
  <meta name="twitter:url" content="https://ethminer.tech/documentation/linux/">
    <meta name="twitter:card" content="summary">
      <meta name="twitter:image" content="https://ethminer.tech/assets/images/site-logo.png">
@@ -35,7 +35,7 @@
  <meta name="google-site-verification" content="9_ctVU7HO3k1LsHpsirBgY_fjGiUFRDpJoahce3O7y8">
  <meta name="yandex-verification" content="cf68ffe195af2491">
 <!-- end _includes/seo.html -->
-<meta name="description" content="В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).">
+<meta name="description" content="Simple steps on how to get started with ETHMiner by manually compiling it and configuring it for mining with Nanopool (although it will work for other pools as well).">
  <meta name="author" content="ETHMiner">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="ETHMiner Feed">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,13 +147,13 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 </nav>
  </div>
  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-   <meta itemprop="headline" content="ETHMiner - Настройка для Linux на примере Ubuntu">
-   <meta itemprop="description" content="В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).">
+   <meta itemprop="headline" content="How to Install Ethminer on linux (Ubuntu)">
+   <meta itemprop="description" content="Simple steps on how to get started with ETHMiner by manually compiling it and configuring it for mining with Nanopool (although it will work for other pools as well).">
    <meta itemprop="datePublished" content="December 29, 2021">
    <meta itemprop="dateModified" content="December 29, 2021"> 
    <div class="page__inner-wrap">
       <header>
-		 <h1 id="page-title" class="page__title" itemprop="headline">ETHMiner - Настройка для Linux на примере Ubuntu
+		 <h1 id="page-title" class="page__title" itemprop="headline">Install Ethminer step by step on Ubuntu
 </h1>
            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
   8 minute read
@@ -166,10 +166,10 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 <i class="fas fa-file-alt"></i> On this page</h4></header>
              <ul class="toc__menu">
  <li>
-<a href="#%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C">Скачать</a>
+<a href="#download">Download</a>
  </li>
 <li>
-<a href="#%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-%D0%B8-%D1%81%D1%83%D1%82%D1%8C-%D1%8D%D1%82%D0%BE%D0%B3%D0%BE-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0">Команды и суть этого руководства</a>
+<a href="#commands-and-essence-of-this-guide">Commands and essence of this guide</a>
    <ul>
      <li>
 <a href="#amd">AMD</a>
@@ -180,19 +180,19 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 </ul>
  </li>
 <li>
-<a href="#%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Требования</a>
+<a href="#requirements">Requirements</a>
  </li>
 <li>
-<a href="#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%D0%B0-amdgpu-pro-%D1%81-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%BE%D0%B9-opencl">Установка драйвера AMDGPU pro с поддержкой OpenCL</a>
+<a href="#installing-amdgpu-pro-driver-with-opencl-support">Installing AMDGPU pro driver with OpenCL support</a>
  </li>
 <li>
-<a href="#%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-ethminer-%D0%B4%D0%BB%D1%8F-ubuntu">Сборка Ethminer для ubuntu</a>
+<a href="#building-ethminer-fot-ubuntu">Building Ethminer fot ubuntu</a>
  </li>
 <li>
-<a href="#%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-ethmienr">Первый запуск Ethmienr</a>
+<a href="#first-launch-of-ethmienr">First launch of Ethmienr</a>
  </li>
 <li>
-<a href="#%D0%B1%D0%B5%D0%BD%D1%87%D0%BC%D0%B0%D1%80%D0%BA%D0%B8%D0%BD%D0%B3-ethminer">Бенчмаркинг Ethminer</a>
+<a href="#benchmarking-ethminer">Benchmarking Ethminer</a>
  </li>
 <li>
 <a href="#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D1%83%D0%BB%D1%83">Подключение к пулу</a>
@@ -249,14 +249,14 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 </ul>
            </nav>
          </aside>
-       <p><em>В этом примере мы покажем простые шаги, как начать работу с ETHMiner, вручную скомпилировав его и настроив для майнинга с помощью Nanopool (хотя он будет работать и для других пулов).</em>
+       <p><em>Simple steps on how to get started with ETHMiner by manually compiling it and configuring it for mining with Nanopool (although it will work for other pools as well).</em>
 <img srcset="/assets/images/documentation/mobile/ethminer.webp 323w,              /assets/images/documentation/webp/ethminer.webp 517w,              /assets/images/documentation/large/ethminer.webp 1920w" sizes="(max-width: 720px) 50px, 			(max-width: 721px) 1920px, 			(max-width: 1920px) 400px,             517px" src="/assets/images/documentation/jpeg/ethminer.png" alt="ethminer" loading="lazy" decoding="async"></p>
-<h2 id="скачать">Скачать</h2>
-<p><a href="https://github.com/ethereum-mining/ethminer/releases/download/v0.19.0-alpha.0/ethminer-0.19.0-alpha.0-cuda-9-darwin-x86_64.tar.gz" class="btn btn--success btn--x-large" rel="nofollow noopener" target="_blank">Скачать сейчас</a></p>
-<p><a href="https://github.com/ethereum-mining/ethminer/releases" class="btn btn--danger btn--x-large" rel="nofollow noopener" target="_blank">Скачать (зеркало)</a></p>
-<p>Хотя <a href="https://bytwork.com/articles/kak-maynit-ethereum" target="_blank">майнинг Ethereum в Windows</a> намного проще, вероятно, есть улучшение хешрейта, когда вы используете <a href="https://www.linux.org/" rel="nofollow noopener" target="_blank">Linux</a> в качестве драйвера.</p>
-<h2 id="команды-и-суть-этого-руководства">Команды и суть этого руководства</h2>
-<p>Сначала убедитесь, что вы установили последние версии драйверов AMDGPU-pro с поддержкой OpenCL.</p>
+<h2 id="download">Download</h2>
+<p><a href="https://github.com/ethereum-mining/ethminer/releases/download/v0.19.0-alpha.0/ethminer-0.19.0-alpha.0-cuda-9-darwin-x86_64.tar.gz" class="btn btn--success btn--x-large" rel="nofollow noopener" target="_blank">Download  now</a></p>
+<p><a href="https://github.com/ethereum-mining/ethminer/releases" class="btn btn--danger btn--x-large" rel="nofollow noopener" target="_blank">Download (mirror)</a></p>
+<p>While mining Ethereum on Windows is much easier, there is probably an improvement in hashrate when you are using <a href="https://www.linux.org/" rel="nofollow noopener" target="_blank">Linux</a> as a driver.</p>
+<h2 id="commands-and-essence-of-this-guide">Commands and essence of this guide</h2>
+<p>First, make sure you have installed the latest AMDGPU-pro drivers with OpenCL support.  в качестве драйвера.</p>
 <h3 id="amd">AMD</h3>
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">opencl</span><span class="o">-</span><span class="n">amdgpu</span><span class="o">-</span><span class="n">pro</span><span class="o">-</span><span class="n">icd</span> <span class="n">cmake</span> <span class="n">git</span> <span class="n">mesa</span><span class="o">-</span><span class="n">common</span><span class="o">-</span><span class="n">dev</span>
 </code></pre></div></div>
@@ -283,66 +283,66 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 <span class="n">ethminer</span> <span class="o">-</span><span class="n">U</span> <span class="o">-</span><span class="n">M</span> <span class="mi">0</span>
 <span class="n">ethminer</span> <span class="o">-</span><span class="n">U</span> <span class="o">--</span><span class="n">report</span><span class="o">-</span><span class="n">hr</span> <span class="o">-</span><span class="n">P</span> <span class="n">stratum1</span><span class="o">+</span><span class="n">tcp</span><span class="o">:</span><span class="c1">//0x47e83baffbc118393c082b7d4a62130b0480bb11.rigname@eth-eu1.nanopool.org:9999
 </span></code></pre></div></div>
-<h2 id="требования">Требования</h2>
-<p>Поскольку Ethereum оптимизирован для майнинга на GPU, одна или несколько мощных видеокарт отлично подходят. Не имеет значения, NVidia это или AMD, хотя мы предпочитаем использовать AMD.</p>
-<p>Также убедитесь, что у вашей видеокарты достаточно памяти. Вы можете использовать <a href="https://minerstat.com/dag-size-calculator?lang=ru" rel="nofollow noopener" target="_blank">калькулятор размера DAG файла</a>, чтобы узнать, сколько памяти вам нужно. Видеокарт с памятью менее 5Гб уже не хватает.</p>
-<p>Также вам понадобится кошелек для предоставления вашего уникального Ethereum адреса.</p>
-<p class="notice--info">Лично мы рекомендуем использовать <a href="https://cutt.ly/nUWrYO8" rel="nofollow noopener" target="_blank">Ledger</a>, поскольку он прост в настройке, поддерживает множество валют и не потребляет все ресурсы вашей системы, как <a href="https://miningsoft.org/ru/wallets/trust/" target="_blank">Trust Wallet</a>.</p>
-<p>Нам не нравится идея, когда посредники хранят ваши <a href="https://bytwork.com/articles/privatnye-klyuchi" target="_blank">приватные ключи</a>, мы предлагаю вам держаться подальше от <a href="https://club.cnews.ru/blogs/entry/obzor_luchshih_apparatnyh_i_oblachnyh_bitkoin_koshelkov" rel="nofollow noopener" target="_blank">облачных кошельков</a>.</p>
-<p>Для карт AMD вам также необходимо установить драйвер AMDGPU-pro с поддержкой OpenCL перед компиляцией Ethminer.</p>
-<h2 id="установка-драйвера-amdgpu-pro-с-поддержкой-opencl">Установка драйвера AMDGPU pro с поддержкой OpenCL</h2>
-<p>Получите последние версии драйверов со страницы <a href="https://www.amd.com/ru/support" rel="nofollow noopener" target="_blank">поддержки AMD</a>, затем установите их с <a href="https://amdgpu-install.readthedocs.io/en/latest/" rel="nofollow noopener" target="_blank">поддержкой OpenCL</a> и перезагрузитесь:</p>
+<h2 id="requirements">Requirements</h2>
+<p>Since Ethereum is optimized for GPU mining, one or more powerful GPUs are great. It doesn’t matter if it’s NVidia or AMD, although we prefer to use AMD.</p>
+<p>Also make sure your graphics card has enough memory. You can use <a href="https://minerstat.com/dag-size-calculator?lang=en" rel="nofollow noopener" target="_blank">the DAG file size calculator</a>, to find out how much memory you need. Video cards with less than 5GB of memory are no longer enough.</p>
+<p>You will also need a wallet to provide your unique Ethereum address.</p>
+<p class="notice--info">We personally recommend using <a href="https://cutt.ly/nUWrYO8" rel="nofollow noopener" target="_blank">Ledger</a>, as it’s easy to set up, supports multiple currencies, and doesn’t consume all your system resources like <a href="https://miningsoft.org/en/wallets/trust/" target="_blank">Trust Wallet</a>.</p>
+<p>We don’t like the idea of ​​resellers keeping your <a href="https://www.techtarget.com/searchsecurity/definition/private-key" rel="nofollow noopener" target="_blank">private keys</a>, we suggest you stay away from <a href="https://sourceforge.net/software/crypto-wallets/saas/" rel="nofollow noopener" target="_blank">cloud wallets</a>.</p>
+<p>For AMD cards, you also need to install the AMDGPU-pro driver with OpenCL support before compiling Ethminer.</p>
+<h2 id="installing-amdgpu-pro-driver-with-opencl-support">Installing AMDGPU pro driver with OpenCL support</h2>
+<p>Get the latest drivers from the <a href="https://www.amd.com/en/support" rel="nofollow noopener" target="_blank">AMD support</a>, page , then install them with <a href="https://amdgpu-install.readthedocs.io/en/latest/" rel="nofollow noopener" target="_blank"> OpenCL support</a> and reboot:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># See: https://www.amd.com/en/support</span>
 <span class="nb">tar</span> <span class="nt">-xf</span> amdgpu-pro-<span class="k">*</span>.tar.xz
 <span class="nb">cd </span>amdgpu-pro-<span class="k">*</span>/
 ./amdgpu-pro-install <span class="nt">--opencl</span><span class="o">=</span>legacy,pal
 reboot
 </code></pre></div></div>
-<p>Для карт Vega10 (или новее) требуется изменение, замените <code class="language-plaintext highlighter-rouge">legacy,pal</code> на <code class="language-plaintext highlighter-rouge">rocm</code>:</p>
+<p>Vega10 (or newer) cards require change, replace <code class="language-plaintext highlighter-rouge">legacy,pal</code> with <code class="language-plaintext highlighter-rouge">rocm</code>:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./amdgpu-pro-install <span class="nt">--opencl</span><span class="o">=</span>rocm
 </code></pre></div></div>
-<p>При желании, можно добавить -<code class="language-plaintext highlighter-rouge">-headless</code> и / или <code class="language-plaintext highlighter-rouge">--no-dkms</code> опцию к <code class="language-plaintext highlighter-rouge">./amdgpu-pro-install</code> команде, если не хотите, чтобы в окружении рабочего стола загружались драйверы AMD:</p>
+<p>Optionally, you can add <code class="language-plaintext highlighter-rouge">--headless</code> / or an <code class="language-plaintext highlighter-rouge">--no-dkms</code> option to the <code class="language-plaintext highlighter-rouge">./amdgpu-pro-install</code> command if you don’t want AMD drivers loaded in the desktop environment:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./amdgpu-pro-install <span class="nt">--opencl</span><span class="o">=</span>legacy,pal <span class="nt">--no-dkms</span> <span class="nt">--headless</span>
 </code></pre></div></div>
-<h2 id="сборка-ethminer-для-ubuntu">Сборка Ethminer для ubuntu</h2>
-<p>Собирать Ethminer вручную не требуется. <a href="/download/latest/">Последнюю версию можно загрузить со страницы релизов</a>. Однако, если вы профессионал и хотите получить дополнительные хэши от вашей видеокарты, скомпилируйте майнер самостоятельно, выполнив следующие шаги.</p>
+<h2 id="building-ethminer-fot-ubuntu">Building Ethminer fot ubuntu</h2>
+<p>There is no need to manually collect Ethminer. The <a href="/download/latest/">latest version can be downloaded from the releases page</a>. However, if you are a professional and want to get additional hashes from your graphics card, compile the miner yourself by following the steps below.</p>
 <ol>
- <li>Сначала установите необходимые драйверы для вашей видеокарты:
+ <li>First, install the necessary drivers for your video card:
    <ul>
-     <li>Для NVidia используйте:
+     <li>For NVidia use:
        <div class="language-bash highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>nvidia-cuda-toolkit
 </code></pre></div>      </div>
      </li>
-<li>Для AMD сначала установите драйвер с поддержкой OpenCL, а затем используйте:
+<li>For AMD, first install the driver with OpenCL support and then use:
        <div class="language-bash highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>opencl-amdgpu-pro-icd
 </code></pre></div>      </div>
    </li>
 </ul>
  </li>
-<li>Также убедитесь, что в вашей системе существуют все необходимые пакеты:
+<li>Also make sure that all required packages exist on your system:
    <div class="language-bash highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>cmake mesa-common-dev git
 </code></pre></div>  </div>
  </li>
-<li>Теперь загрузите последнюю версию с GitHub в новую папку:
+<li>Now download the latest version from GitHub into a new folder:
    <div class="language-bash highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>git clone https://github.com/ethereum-mining/ethminer.git
 <span class="nb">cd </span>ethminer
 git submodule update <span class="nt">--init</span> <span class="nt">--recursive</span>
 </code></pre></div>  </div>
  </li>
-<li>Наконец, скомпилируйте его (команда займет некоторое время, так что наберитесь терпения):
+<li>Finally, compile it (the command will take a while, so be patient):
    <ul>
-     <li>Для AMD используйте:
+     <li>For AMD use:
        <div class="language-bash highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>build<span class="p">;</span> <span class="nb">cd </span>build
 cmake .. <span class="nt">-DETHASHCUDA</span><span class="o">=</span>OFF <span class="nt">-DETHASHCL</span><span class="o">=</span>ON
 cmake <span class="nt">--build</span> <span class="nb">.</span> <span class="nt">--</span> <span class="nt">-j</span>
 </code></pre></div>      </div>
      </li>
-<li>Для использования NVidia:
+<li>To use NVidia:
        <div class="language-bash highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>build<span class="p">;</span> <span class="nb">cd </span>build
 cmake .. <span class="nt">-DETHASHCUDA</span><span class="o">=</span>ON <span class="nt">-DETHASHCL</span><span class="o">=</span>OFF
@@ -351,34 +351,33 @@ cmake <span class="nt">--build</span> <span class="nb">.</span> <span class="nt"
    </li>
 </ul>
  </li>
-<li>При желании вы можете установить его как исполняемый файл:
+<li>Optionally, you can install it as an executable file:
    <div class="language-bash highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>make <span class="nb">install</span>
 </code></pre></div>  </div>
 </li>
 </ol>
-<h2 id="первый-запуск-ethmienr">Первый запуск Ethmienr</h2>
-<p>Если вы пропустили шаг 5 выше, вы можете запустить Ethminer из каталога ethminer внутри каталога сборки, в котором вы, вероятно, все еще находитесь:</p>
+<h2 id="first-launch-of-ethmienr">First launch of Ethmienr</h2>
+<p>If you skipped step 5 above, you can start Ethminer from the ethminer directory inside the build directory you are probably still in:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ethminer/ethminer <span class="nt">--help</span>
 </code></pre></div></div>
-<p>В противном случае вы можете запустить его напрямую:</p>
+<p>Otherwise, you can run it directly:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ethminer <span class="nt">--help</span>
 </code></pre></div></div>
-<p>Команды выше показывают краткую документацию Ethminer. Для длинной документации используйте <code class="language-plaintext highlighter-rouge">--help-ext</code> опцию с одним из допустимых расширений:</p>
+<p>The commands above show brief Ethminer documentation. For lengthy documentation, use an <code class="language-plaintext highlighter-rouge">--help-ext</code> option with one of the valid extensions:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ethminer <span class="nt">--help-ext</span>
 </code></pre></div></div>
-<p>При желании вы можете просмотреть все параметры в файле <a href="https://github.com/ethereum/aleth#usage-1" rel="nofollow noopener" target="_blank">readme cpp-ethereum</a> (который является источником ethminer с поддержкой GPU).</p>
-<h2 id="бенчмаркинг-ethminer">Бенчмаркинг Ethminer</h2>
-<p>Чтобы получить представление о Mh/s, достигаемых вашей фермой, вы можете сначала запустить тест.
-Для ATI / OpenCL используйте:</p>
+<p>Optionally, you can view all options in the <a href="https://github.com/ethereum/aleth#usage-1" rel="nofollow noopener" target="_blank">cpp-ethereum readme file</a>  (which is the GPU-enabled ethminer source).</p>
+<h2 id="benchmarking-ethminer">Benchmarking Ethminer</h2>
+<p>To get an idea of ​​the Mh / s being achieved by your farm, you can run the test first. For ATI / OpenCL use:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ethminer/ethminer <span class="nt">-G</span> <span class="nt">-M</span> 0
 </code></pre></div></div>
-<p>Для NVidia / CUDA используйте:</p>
+<p>For NVidia / CUDA use:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ethminer/ethminer <span class="nt">-U</span> <span class="nt">-M</span> 0
 </code></pre></div></div>
-<p>Если тест возвращает пустой результат (что, вероятно, будет в первые несколько раз), подождите, пока не будет сгенерирован DAG файл.</p>
+<p>If the test returns an empty result (which it probably will be the first few times), wait for the DAG file to be generated.</p>
 <p><a href="/assets/images/documentation/webp/ethminer-benchmark.webp" class="image-popup"> <img src="/assets/images/documentation/webp/ethminer-benchmark.webp" alt="benchmark" loading="lazy" decoding="async"> </a></p>
-<p>Разделите “MAX hashrate” на 1000000, чтобы получить скорость в мегахэшах. Это ваш реальный хешрейт в MH/s.</p>
+<p>Divide “MAX hashrate” by 1,000,000 to get the speed in megahashes. This is your real hash rate in MH/s.</p>
 <h2 id="подключение-к-пулу">Подключение к пулу</h2>
 <p>Наконец, мы готовы начать майнинг! Последний шаг на самом деле очень прост, просто выполните следующую команду:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ethminer/ethminer <span class="nt">-G</span> <span class="nt">--report-hr</span> <span class="nt">-P</span> stratum1+tcp://0x5576999cc34c1c0030f28939444d6ba9cd6919c2.rigname@eth-eu1.nanopool.org:9999
@@ -789,7 +788,7 @@ Get started with ETHMiner
      </footer>
      <section class="page__share">
    <h4 class="page__share-title">Share on</h4>
-  <a href="https://twitter.com/intent/tweet?via=ETHMiner&amp;text=ETHMiner+-+%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+%D0%B4%D0%BB%D1%8F+Linux+%D0%BD%D0%B0+%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%B5+Ubuntu%20https%3A%2F%2Fethminer.tech%2Fdocumentation%2Flinux%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=ETHMiner&amp;text=How+to+Install+Ethminer+on+linux+%28Ubuntu%29%20https%3A%2F%2Fethminer.tech%2Fdocumentation%2Flinux%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fethminer.tech%2Fdocumentation%2Flinux%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
   <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fethminer.tech%2Fdocumentation%2Flinux%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>

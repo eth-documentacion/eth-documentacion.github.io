@@ -303,7 +303,7 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 <p>Также убедитесь, что у вашей видеокарты достаточно памяти. Вы можете использовать <a href="https://minerstat.com/dag-size-calculator?lang=ru" rel="nofollow noopener" target="_blank">калькулятор размера DAG файла</a>, чтобы узнать, сколько памяти вам нужно. Видеокарт с памятью менее 5Гб уже не хватает.</p>
 <p>Также вам понадобится кошелек для предоставления вашего уникального Ethereum адреса.</p>
 <p class="notice--info">Лично мы рекомендуем использовать <a href="https://cutt.ly/nUWrYO8" rel="nofollow noopener" target="_blank">Ledger</a>, поскольку он прост в настройке, поддерживает множество валют и не потребляет все ресурсы вашей системы, как <a href="https://miningsoft.org/ru/wallets/trust/" target="_blank">Trust Wallet</a>.</p>
-<p>Нам не нравится идея, когда посредники хранят ваши <a href="https://bytwork.com/articles/privatnye-klyuchi" target="_blank">приватные ключи</a>, мы предлагаю вам держаться подальше от <a href="https://club.cnews.ru/blogs/entry/obzor_luchshih_apparatnyh_i_oblachnyh_bitkoin_koshelkov" rel="nofollow noopener" target="_blank">облачных кошельков</a>.</p>
+<p>Нам не нравится идея, когда посредники хранят ваши <a href="https://bytwork.com/articles/privatnye-klyuchi" target="_blank">приватные ключи</a>, мы предлагаем вам держаться подальше от <a href="https://club.cnews.ru/blogs/entry/obzor_luchshih_apparatnyh_i_oblachnyh_bitkoin_koshelkov" rel="nofollow noopener" target="_blank">облачных кошельков</a>.</p>
 <p>Для карт AMD вам также необходимо установить драйвер AMDGPU-pro с поддержкой OpenCL перед компиляцией Ethminer.</p>
 <h2 id="установка-драйвера-amdgpu-pro-с-поддержкой-opencl">Установка драйвера AMDGPU pro с поддержкой OpenCL</h2>
 <p>Получите последние версии драйверов со страницы <a href="https://www.amd.com/ru/support" rel="nofollow noopener" target="_blank">поддержки AMD</a>, затем установите их с <a href="https://amdgpu-install.readthedocs.io/en/latest/" rel="nofollow noopener" target="_blank">поддержкой OpenCL</a> и перезагрузитесь:</p>
@@ -316,11 +316,11 @@ reboot
 <p>Для карт Vega10 (или новее) требуется изменение, замените <code class="language-plaintext highlighter-rouge">legacy,pal</code> на <code class="language-plaintext highlighter-rouge">rocm</code>:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./amdgpu-pro-install <span class="nt">--opencl</span><span class="o">=</span>rocm
 </code></pre></div></div>
-<p>При желании, можно добавить -<code class="language-plaintext highlighter-rouge">-headless</code> и / или <code class="language-plaintext highlighter-rouge">--no-dkms</code> опцию к <code class="language-plaintext highlighter-rouge">./amdgpu-pro-install</code> команде, если не хотите, чтобы в окружении рабочего стола загружались драйверы AMD:</p>
+<p>При желании, можно добавить<code class="language-plaintext highlighter-rouge">--headless</code> и / или <code class="language-plaintext highlighter-rouge">--no-dkms</code> опцию к <code class="language-plaintext highlighter-rouge">./amdgpu-pro-install</code> команде, если не хотите, чтобы в окружении рабочего стола загружались драйверы AMD:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./amdgpu-pro-install <span class="nt">--opencl</span><span class="o">=</span>legacy,pal <span class="nt">--no-dkms</span> <span class="nt">--headless</span>
 </code></pre></div></div>
 <h2 id="сборка-ethminer-для-ubuntu">Сборка Ethminer для ubuntu</h2>
-<p>Собирать Ethminer вручную не требуется. <a href="/download/latest/">Последнюю версию можно загрузить со страницы релизов</a>. Однако, если вы профессионал и хотите получить дополнительные хэши от вашей видеокарты, скомпилируйте майнер самостоятельно, выполнив следующие шаги.</p>
+<p>Собирать Ethminer вручную не требуется. <a href="/ru/download/latest/">Последнюю версию можно загрузить со страницы релизов</a>. Однако, если вы профессионал и хотите получить дополнительные хэши от вашей видеокарты, скомпилируйте майнер самостоятельно, выполнив следующие шаги.</p>
 <ol>
  <li>Сначала установите необходимые драйверы для вашей видеокарты:
    <ul>
